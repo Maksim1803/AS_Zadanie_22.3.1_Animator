@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+    android:ordering="sequentially">  <!--  ВАЖНО: анимации выполняются последовательно -->
+
+    <!-- Движение снизу вверх -->
+    <translate
+        android:fromYDelta="0%"
+        android:toYDelta="-500%"
+        android:duration="500" />
+
+    <!-- Поворот по часовой стрелке на 90 градусов -->
+    <rotate
+        android:fromDegrees="0"
+        android:toDegrees="90"
+        android:pivotX="0%"
+        android:pivotY="0%"
+        android:duration="800" />
+
+    <!-- Движение слева направо, пока не исчезнет за границами экрана -->
+    <translate
+        android:fromXDelta="0%"
+        android:toXDelta="100%"
+        android:duration="1100" />
+
+</set>

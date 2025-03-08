@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Движение снизу вверх -->
+    <objectAnimator
+        android:duration="500"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:propertyName="translationY"
+        android:valueFrom="0dp"
+        android:valueTo="-500dp"
+        android:valueType="floatType" />
+
+    <!-- Поворот по часовой стрелке на 90 градусов -->
+    <objectAnimator
+        android:duration="800"
+        android:pivotX="0%"
+        android:pivotY="0%"
+        android:propertyName="rotation"
+        android:valueFrom="0"
+        android:valueTo="90"
+        android:valueType="floatType" />
+
+    <!-- Движение слева направо, пока не исчезнет за границами экрана -->
+    <objectAnimator
+        android:duration="1100"
+        android:propertyName="translationX"
+        android:startOffset="800"
+        android:valueFrom="0dp"
+        android:valueTo="500dp"
+        android:valueType="floatType" />
+
+</set>
